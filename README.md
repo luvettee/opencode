@@ -39,6 +39,44 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
+## OpenCode · Silk & Waves community fork
+
+A customizable OpenCode desktop experience with animated backgrounds, translucent glass controls, and a compact reasoning picker. This fork is maintained by [luvettee](https://github.com/luvettee) and is not affiliated with the OpenCode team.
+
+**[Download the Mac app](https://github.com/luvettee/opencode/releases/download/v2.1.1-silk.3/OpenCode-Silk-Waves-2.1.1-Preview-3-macOS-arm64.zip)** · [Release notes & startup video](https://github.com/luvettee/opencode/releases/tag/v2.1.1-silk.3)
+
+### What this fork adds
+
+| Feature | What you can customize |
+| --- | --- |
+| **Silk & Waves backgrounds** | Animated WebGL flow shaders on both the start page and chats. They follow the display's animation-frame cadence, respect reduced motion, and pause when hidden. |
+| **Animated ocean** | Choose from the included shark and other ocean species. |
+| **Your own background** | Upload a PNG or a video supported by the app; the background persists across restarts and appears in chats too. |
+| **Translucent ask bar** | Toggle the glass effect and adjust transparency and blur with sliders. |
+| **Message colors** | Set the chat canvas, bubble, and text colors, or apply the Panda preset for a black canvas and white bubbles. Custom colors can be toggled. |
+| **Reasoning controls** | A compact reasoning picker with an ASCII animation when selecting the highest supported reasoning level. Availability depends on the model. |
+| **Model logos** | Provider/model icons make the model picker easier to scan. |
+| **Startup animation** | Wallpaper and a standalone logo fade in smoothly, then fade into the app. Reduced-motion preferences are respected. |
+| **Notification sounds** | Customize notification sounds in settings. |
+
+Start with **Settings → Appearance** for backgrounds, ocean species, glass sliders, and message colors. Reasoning controls appear beside the model controls for supported models.
+
+### Install this fork on macOS
+
+1. Download the ZIP above and unzip it.
+2. Move **OpenCode Dev.app** into **Applications** and open it.
+3. Connect your model provider. The local backend is bundled; no build tools or dev server are needed.
+
+The published preview requires **Apple Silicon (M1 or newer) and macOS 13+**. It is ad-hoc signed and is not notarized. If macOS blocks the first launch, follow [Apple's Open Anyway instructions](https://support.apple.com/en-us/102445) after deciding you trust this community build. Checksums are included with the release.
+
+The downloadable preview is based on OpenCode **2.1.1**. The **2.1.2 source sync is tracked in [PR #1](https://github.com/luvettee/opencode/pull/1)**; it is not included in that download.
+
+---
+
+## Upstream OpenCode
+
+The documentation below describes the upstream project. Its installers and download links install the official upstream version; use the Mac download above for this fork's custom features.
+
 [![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
 
 ---
